@@ -1,0 +1,146 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.dbtn{
+
+}
+
+
+/* img link
+logo
+
+
+wrk icon
+https://i.ibb.co/rHjKX0X/ia-200000001.png
+
+wi2
+https://i.ibb.co/Ph2ZqJT/ia-200000002.png
+w3
+https://i.ibb.co/hD7xzS5/ia-200000003.png
+
+
+w4
+https://i.ibb.co/1zqmRHH/ia-200000004.png
+
+bg 1
+
+
+bg-2
+https://i.ibb.co/Vgx620M/ia-200000022.jpg
+
+
+
+*/
+
+
+/* <!-- heder section  --> */
+
+header{
+    background-color: #080502;
+    padding-top: 4px;
+}
+
+.logo{}
+.logo img{
+    width: 230px;
+}
+nav{}
+ul {
+    margin: 0px 0px;
+    /* margin-left: 0px; */
+    padding: 0px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+
+padding: 10px 20px;
+position: relative;
+transition: .4s;
+
+
+/* display: block; */
+
+line-height: 42px;
+}
+
+
+
+
+ul li a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 2px;
+    
+    background-color: #fff;
+    transform: scaleX(0);
+    
+    transition: .4s;
+
+}
+
+ul li a:hover::before{
+    transform: scaleX(1);
+    
+    
+   
+
+}
+
+/* dropdown menu */
+
+.dropdown{
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    margin-left: 0px;
+    
+    transform: scale(0);
+    transform-origin: top center;
+    background-color: #fff;
+    transition: .4s;
+}
+.dropdown li{
+    display: block;
+}
+.dropdown li a{
+    display: block;
+    color: #000 !important;
+}
+ul li:hover ul{
+    transform: scale(1);
+    
+}
+
+
+/* banner section */
+
+.banner{
+    background: url(https://i.ibb.co/y0z7BTk/ia-200000019.jpg) no-repeat center;
+    background-size: cover;
+    padding: 200px;
+}
